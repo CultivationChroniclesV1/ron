@@ -9,7 +9,7 @@ app.use(express.static('dist/public'));
 
 // Handle SPA routing
 app.get('*', (req, res) => {
-  res.sendFile('dist/public/index.html', { root: '.' });
+  res.sendFile('dist/client/index.html', { root: '.' });
 });
 
 app.use((req, res, next) => {
